@@ -3,7 +3,7 @@ class Entity:
     a base class for any object that is represented in this game
     """
 
-    def __init__(self, p_id, p_name, p_components, p_flags):
+    def __init__(self, p_id, p_name, p_components=[], p_flags=[]):
         self.id = p_id
         self.name = p_name
         self.components = p_components

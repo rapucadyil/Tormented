@@ -1,8 +1,9 @@
-import entity
+from infra import entity
 import pygame
 def main():
-    print("hello tormented world!")
-
+    e = entity.Entity(0, "rapucadyil")
+    print(e.__str__())
 
 if __name__ == '__main__':
-    main()
+    while True:
+        main()
