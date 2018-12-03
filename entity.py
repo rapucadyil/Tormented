@@ -10,6 +10,10 @@ class Entity:
     def __eq__(self, other):
         return self.id == other.id and self.name == other.name and self.comps == other.comps and self.flags == other.flags
 
+    def __str__(self):
+        return 'Entity, Name: {}, ID: {}, ' \
+               'Comps: {}, Flags: {}'.format(self.name, self.id, self.comps, self.flags)
+
     def add_component(self, component):
         self.comps.append(component)
 
